@@ -1,7 +1,6 @@
 //scripts
-import script_main from './main/script_main';
+import header from './main/header';
 import ajax from './main/ajax';
-import responsive from './main/responsive';
 //css
 import  '../postcss/style.css';
 //fonts
@@ -10,7 +9,5 @@ CSSFontLoader.loadFromCSS ( 'postcss/fonts/myfonts.css',function () {
   console.log('success');
 });
 
-
-script_main();
+header();
 ajax();
-responsive();

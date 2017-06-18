@@ -3,20 +3,16 @@ let path = require('path');
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const extractCSS = new ExtractTextPlugin('./css/style.css');
+const extractCSS = new ExtractTextPlugin('./postcss/style.css');
 var postcssUrl = require("postcss-url");
 
 module.exports = {
   context: __dirname + '/src/',
   entry: {
-    script: './js/script',
     pages : './js/pages/common',
     common: './js/no_babel/common',
-    react : './app/main',
-    main : '../pages/main/script'/*,
-    polyfills: './ts/config/polyfills',
-    vendor: './ts/config/vendor',
-    app: './ts/main'*/
+    script: './js/script',
+    react: './app/main'
   },
 
   output: {

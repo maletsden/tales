@@ -1,0 +1,59 @@
+//Header
+:root{
+  --near_white: #eaeaea;
+  --white:#fff;
+  --near_grey:#727272;
+  --near_yellow:#f9b93e;
+}
+.container{
+  width:1114px;
+  height:250px;
+  position:absolute;
+  top:288px;
+  bottom: 212px;
+}
+.ABOUT_US{
+  font-size: 47.99px;
+  font-family:Helvetica;
+  font-weight: normal;
+  position: absolute;
+  left: 2px;
+  color:var(--white);
+}
+.yellow_hr{
+  position: absolute;
+  top: 57.99px;
+  left: 0;
+  background: var(--near_yellow);
+  width: 297px;
+  height: 1px;
+  border: 0;
+}
+.ABOUT_US_div{
+  width: 297px;
+}
+.ABOUT_US_text{
+  font-size: 20.02px;
+  font-family:Helvetica;
+  font-weight: normal;
+  position: absolute 135px 538px 19px 2px;
+  color:var(--near_grey);
+  size:579px 376px;
+}
+.envelope{
+  position: absolute 512px 922px 0 6px;
+}
+.fa-envelope{
+  color:var(--near_yellow);
+  font-size: 20px !important;
+  font-style: normal;
+}
+.envelope_email{
+  color:var(--white);
+  font-size: 20px ;
+  margin-left: 10px
+}
+.judgment_cat{
+  width: 441px;
+  position: absolute 83px 0 114px 678px;
+}

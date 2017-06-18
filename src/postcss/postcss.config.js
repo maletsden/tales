@@ -10,7 +10,7 @@ module.exports = {
         require('autoprefixer'),
         new cssnano ({
           autoprefixer:true,
-          core:false,
+          core:true,
           discardOverridden:true,
           postcssDiscardComments: true
         }),
