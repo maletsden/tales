@@ -1,5 +1,4 @@
 //scripts
-import header from './main/header';
 import ajax from './main/ajax';
 //css
 import  '../postcss/style.css';
@@ -9,5 +8,4 @@ CSSFontLoader.loadFromCSS ( 'postcss/fonts/myfonts.css',function () {
   console.log('success');
 });
 
-header();
 ajax();

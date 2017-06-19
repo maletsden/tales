@@ -1,0 +1,23 @@
+:root{
+  --near_grey: #727272;
+  --white:#fff;
+  --dark_white:#b7b7b7;
+  --near_yellow:#f9b93e;
+}
+.terms_of_service{
+  font-size: 47.99px;
+  font-family:Helvetica;
+  font-weight: normal;
+  color: var(--white);
+  position: absolute;
+  top: 288px;
+  left: 128px;
+}
+.terms_yellow_hr{
+  position: absolute;
+  top: 339px;
+  left: 126px;
+  background: var(--near_yellow);
+  size: 497px 1px;
+  border: 0;
+}

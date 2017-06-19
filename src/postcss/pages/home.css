@@ -1,0 +1,37 @@
+:root{
+  --near_white: #eaeaea;
+  --white:#fff;
+  --near_dark_grey:#5b5b5b;
+  --near_yellow:#f9b93e;
+}
+
+.home_read_write{
+  position: absolute 330px 702px 609px 128px;
+  width:514px;
+  color:var(--white);
+  font-size: 48.02px;
+  font-family:Helvetica;
+  font-weight: normal;
+  line-height:1.128571 !important;
+  span{
+    color:var(--near_yellow);
+  }
+}
+.home_text{
+  position: absolute 460px 706px 625px 130px;
+  width:514px;
+  color:var(--near_dark_grey);
+  font-size: 20.02px;
+}
+.app_store{
+  position: absolute 577px 1035px 386px 130px;
+  width: 171px;
+}
+.google_play{
+  position: absolute 577px 781px 386px 371px;
+  width: 184px;
+}
+.phone{
+  position: absolute 213px 132px 153px 912px;
+  width: 292px;
+}

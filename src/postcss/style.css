@@ -1,6 +1,9 @@
 @import  './pages/about';
+@import  './pages/home';
+@import  './pages/privacy';
+@import  './pages/terms';
 
-@import  './bootstrap/bootstrap.min';
+@import  './bootstrap/bootstrap';
 @import  './font-awesome/css/font-awesome';
 
 
@@ -79,33 +82,43 @@
   font-family:Helvetica;
   font-weight: bold;
   position: absolute;
-  left: 979px
+  left: 985px;
+  top:74px;
+  width:120px;
 }
 .fa-facebook{
   position: absolute;
-  left: 1150px;
+  left: 1157px;
+  top:65px;
   font-size: 23.91px !important;
   font-style: normal;
+  width:23.91px;
 }
 .fa-twitter{
   position: absolute;
-  left: 1203px;
+  left: 1210px;
+  top:65px;
   font-size: 23.91px !important;
   font-style: normal;
+  width:23.91px;
 }
 
 .Header{
-  margin-top:50px;
   color: var(--near_white);
+  & div{
+    margin-bottom:40px;
+  }
 }
 .tales{
   font-size: 36px;
   font-family:Helvetica;
   font-weight: lighter;
+  position: absolute 50px 1022px 936px 214px;
 }
 .header_img{
   size: auto 50px;
   margin-right: 24px;
+  position:absolute 50px 1176px 935px 130px;
 }
 
 
@@ -116,9 +129,11 @@
   position: absolute 977px 955px 41px 127px;
   font-size: 18px;
   color: var(--corpopation_license);
+  margin-bottom:40px;
 }
 .footer_hr{
-  position: absolute 947px 940px 87px 127px;
+  position: absolute;
+  left:127px;
   background: var(--footer_hr);
   size: 297px 1px;
   border: 0;
@@ -127,23 +142,23 @@
   font-size: 18px;
   color:var(--footer_terms);
   position: absolute;
-  top: 977px;
   left:932px;
-  width:131px;
+  bottom:43px;
+  size:131px 18px;
 }
 .footer_smile{
   font-size: 18px;
   color:var(--footer_terms);
   position: absolute;
-  top: 979px;
   left:1084px;
-  width:18px;
+  bottom:41px;
+  size:18px;
 }
 .footer_privacy{
   font-size: 18px;
   color:var(--footer_terms);
   position: absolute;
-  top: 977px;
   left:1119px;
-  width:131px;
+  bottom:41px;
+  size:131px 18px;
 }

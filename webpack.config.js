@@ -9,7 +9,6 @@ var postcssUrl = require("postcss-url");
 module.exports = {
   context: __dirname + '/src/',
   entry: {
-    pages : './js/pages/common',
     common: './js/no_babel/common',
     script: './js/script',
     react: './app/main'
