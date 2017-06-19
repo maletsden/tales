@@ -6,7 +6,9 @@
 }
 
 .home_read_write{
-  position: absolute 330px 702px 609px 128px;
+  position: absolute;
+  top:330px;
+  left:9%;
   width:514px;
   color:var(--white);
   font-size: 48.02px;
@@ -18,20 +20,28 @@
   }
 }
 .home_text{
-  position: absolute 460px 706px 625px 130px;
+  position: absolute;
+  top:460px;
+  left:9%;
   width:514px;
   color:var(--near_dark_grey);
   font-size: 20.02px;
 }
 .app_store{
-  position: absolute 577px 1035px 386px 130px;
+  position: absolute;
   width: 171px;
+  top:577px;
+  left:9%;
 }
 .google_play{
-  position: absolute 577px 781px 386px 371px;
+  position: absolute;
   width: 184px;
+  top:577px;
 }
 .phone{
-  position: absolute 213px 132px 153px 912px;
+  position: absolute;
+  right: 3%;
+  top:213px;
+  z-index: -5;
   width: 292px;
 }

@@ -11,11 +11,12 @@ module.exports = {
   entry: {
     common: './js/no_babel/common',
     script: './js/script',
+    pages: './js/pages/common',
     react: './app/main'
   },
 
   output: {
-    path: path.resolve(__dirname,'dist'),
+    path: path.resolve(__dirname,'dist/desktop'),
     filename: '[name].js',
     publicPath: '/',
     library: '[name]'

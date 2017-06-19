@@ -13,6 +13,8 @@ class App extends Component {
         <Header/>
         <div id='container'></div>
         <Footer/>
+
+        <div className='alphabet_bg'></div>
       </div>
 
     );

@@ -71,9 +71,6 @@
   align-items: flex-end;
 }
 
-#main{
-  padding: 0 120px 0 126px;
-}
 
 //Header
 
@@ -82,58 +79,68 @@
   font-family:Helvetica;
   font-weight: bold;
   position: absolute;
-  left: 985px;
+  right: 10%;
   top:74px;
   width:120px;
+  color: var(--near_white);
 }
 .fa-facebook{
   position: absolute;
-  left: 1157px;
   top:65px;
+  right: 4%;
   font-size: 23.91px !important;
   font-style: normal;
-  width:23.91px;
+  size:13.672px 34px;
 }
 .fa-twitter{
   position: absolute;
-  left: 1210px;
+  right: 0;
   top:65px;
   font-size: 23.91px !important;
   font-style: normal;
-  width:23.91px;
+  size:13.672px 34px;
 }
 
 .Header{
   color: var(--near_white);
-  & div{
-    margin-bottom:40px;
-  }
+  width:90%;
+  margin: auto;
+  position: relative;
 }
 .tales{
   font-size: 36px;
   font-family:Helvetica;
   font-weight: lighter;
-  position: absolute 50px 1022px 936px 214px;
+  position: relative;
+  top:50px;
+  left:5%;
+  color: var(--near_white);
 }
 .header_img{
   size: auto 50px;
   margin-right: 24px;
-  position:absolute 50px 1176px 935px 130px;
+  position:relative;
+  top:50px;
+  left:5%;
 }
-
+.header_social{
+  width: 100%;
+  height: 25px;
+}
 
 // Footer
 
 .footer_corpopation_license{
   size: 283px 18px;
-  position: absolute 977px 955px 41px 127px;
+  position: absolute;
+  left:9%;
   font-size: 18px;
   color: var(--corpopation_license);
   margin-bottom:40px;
 }
 .footer_hr{
   position: absolute;
-  left:127px;
+  left:9%;
   background: var(--footer_hr);
   size: 297px 1px;
   border: 0;
@@ -142,7 +149,8 @@
   font-size: 18px;
   color:var(--footer_terms);
   position: absolute;
-  left:932px;
+  right:3%;
+  margin-right:173px;
   bottom:43px;
   size:131px 18px;
 }
@@ -150,7 +158,8 @@
   font-size: 18px;
   color:var(--footer_terms);
   position: absolute;
-  left:1084px;
+  right:3%;
+  margin-right:136px;
   bottom:41px;
   size:18px;
 }
@@ -158,7 +167,14 @@
   font-size: 18px;
   color:var(--footer_terms);
   position: absolute;
-  left:1119px;
+  right:3%;
   bottom:41px;
   size:131px 18px;
+}
+
+.alphabet_bg div{
+  position:absolute;
+  z-index:-15;
+  color:#fff;
+  font-size:200%;
 }

@@ -11,19 +11,17 @@
   color: var(--white);
   position: absolute;
   top: 288px;
-  left: 128px;
 }
 .privacy_yellow_hr{
   position: absolute;
   top: 339px;
-  left: 126px;
   background: var(--near_yellow);
   size: 407px 1px;
   border: 0;
 }
 .privacy_text_div{
-  position: absolute 423px 134px 112px 128px;
-  width: 1074px;
+  position: absolute;
+  top:423px;
 }
 .privacy_title{
   font-size: 20.02px;

@@ -1,13 +1,13 @@
 module.exports = function(){
   $(function() {
-
-    resize();
-
     $(window).resize(function() {
-      resize();
-    });
-  });
-};
+      all_respon();
 
-function resize() {
+    });
+
+  });
+  all_respon();
+
+function all_respon(){
 }
+};

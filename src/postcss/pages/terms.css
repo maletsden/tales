@@ -11,13 +11,17 @@
   color: var(--white);
   position: absolute;
   top: 288px;
-  left: 128px;
 }
 .terms_yellow_hr{
   position: absolute;
   top: 339px;
-  left: 126px;
   background: var(--near_yellow);
   size: 497px 1px;
   border: 0;
+}
+.terms_container{
+  position: relative;
+  margin: auto;
+  width: 90%;
+  top:-125px;
 }
