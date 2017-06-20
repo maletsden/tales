@@ -1,10 +1,11 @@
 module.exports = function(){
   $(function() {
+
     $(window).resize(function functionName() {
       $('.footer_terms,.footer_smile,.footer_privacy,.footer_corpopation_license,.footer_hr').css('top',0);
       footer_resize();
     });
-    var menu_item='privacy';
+    var menu_item='home';
     container_ajax(menu_item);	//load content
     $(function() {
       //menu div(click) AJAX
@@ -18,25 +19,24 @@ module.exports = function(){
 
 
     });
-    //window.location.replace('../src/index.html');
 
   });
 
 function container_ajax(menu_item) {
   $.ajax({
-    url: 'pages/' + menu_item + '.html',
+    url: 'desktop/pages/' + menu_item + '.html',
     method:'GET',
     success: function(data){
-      $('.alphabet_bg').empty();
+      $('.about_us').css('font-weight','normal');
       $('.footer_terms,.footer_smile,.footer_privacy,.footer_corpopation_license,.footer_hr').css('top',0);
 
       $('#container').html(data);
-
       footer_resize();
         if (menu_item=='home') {
         pages.home();
       }
       if (menu_item=='about') {
+        $('.about_us').css('font-weight','bold');
         pages.about();
       }
       if (menu_item=='terms') {
@@ -51,8 +51,9 @@ function container_ajax(menu_item) {
 
 
 function footer_resize() {
-  var foot_hr=$(document).height();
+  var foot_hr=$(document).height() + 50;
   $('.footer_terms,.footer_smile,.footer_privacy,.footer_corpopation_license').css('top',foot_hr + 40 +'px');
   $('.footer_hr').css('top',foot_hr +'px');
 }
+
 };

@@ -1,0 +1,202 @@
+@import  './pages/about';
+@import  './pages/home';
+@import  './pages/privacy';
+@import  './pages/terms';
+
+@import  './bootstrap/bootstrap';
+@import  './font-awesome/css/font-awesome';
+
+
+
+
+@charset "UTF-8";
+
+
+:root{
+  --near_white: #eaeaea;
+  --corpopation_license:#686868;
+  --footer_hr:#e0e0e0;
+  --footer_terms:#555555;
+  --white:#fff;
+}
+
+
+/*---------------------------------------------------------------------------------
+	0.  Flex classes
+
+----------------------------------------------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------------------------------------------- */
+/*	0. Flex classes
+/* -------------------------------------------------------------------------------- */
+.white{
+  color:white!important
+}
+.margin-auto{
+  margin:auto;
+}
+.flex{
+	display: flex
+}
+.flex_center{
+  justify-content: center
+}
+.flex_right{
+	justify-content: flex-end
+}
+.flex_between{
+  justify-content: space-between
+}
+.flex_align_center{
+	align-items: center
+}
+.flex_direct_col{
+	flex-direction:column
+}
+.flex_direct_row{
+	flex-direction:row
+}
+.flex_wrap{
+	flex-wrap: wrap
+}
+.flex_no_wrap{
+	flex-wrap: nowrap
+}
+.flex_align_start{
+  align-items:stretch;
+}
+.flex_align_end{
+  align-items: flex-end;
+}
+
+
+//Header
+
+.menu_icon_div{
+  position: absolute;
+  left: 10%;
+  div{
+    position: relative;
+    size:100% 20%;
+
+    margin-bottom: 20%;
+    background: var(--white);
+  }
+}
+.menu{
+  position: absolute;
+  left:-100%;
+  top:0;
+  size:100%;
+  background: #000;
+}
+.socials{
+  font-size: 47.82px;
+  color: var(--white);
+  font-style: normal;
+  bottom: 10%;
+  position: absolute;
+  width:100%;
+  margin-top: 35%;
+  i{
+    font-style: normal;
+  }
+}
+.menu_cont{
+  size:100%;
+  margin-top: 0;
+  > div > div{
+    color: var(--white);
+    position: relative;
+    margin-top:30%;
+  }
+
+}
+.fa-arrow-left{
+  position: absolute;
+  font-size: 36px;
+  font-style: normal;
+  color: var(--white);
+  left: 8%;
+  top: 9.5%;
+  width: 40px;
+  height: 30px;
+}
+.fa-facebook{
+  margin-right: 60px;
+}
+.home{
+  margin-top: 50%;
+}
+.logo{
+  position: absolute;
+  top: 9.5%;
+  width: 100%;
+  z-index: -12;
+}
+.header_img{
+}
+.tales{
+  line-height: 0;
+  margin-left: 4.8%;
+  color: #fff;
+}
+// Footer
+.footer_hr{
+  margin-top: 30px;
+  size:45% 1px;
+  position: absolute;
+  color: var(--corpopation_license);
+  bottom: 0;
+
+}
+.footer_corpopation_license{
+  width:100%;
+  position: absolute;
+  color: var(--corpopation_license);
+  margin-bottom:40px;
+  bottom: 0;
+}
+.Footer *{
+  z-index: -5;
+}
+
+.menu,.menu *{
+  z-index:999;
+}
+
+
+
+
+
+
+
+
+
+#particles-js{
+  position:fixed;
+  z-index:-15;
+  color:var(--white);
+  font-size:200%;
+  size: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background: #000000;
+}
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}

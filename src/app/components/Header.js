@@ -6,7 +6,7 @@ export const Header = (props) => {
 
         <img className='header_img' src='images/logo.gif' href='home'/>
 
-        <div className='tales' href='home'>Tales.</div>
+        <div className='tales flex flex_align_center' href='home'>Tales.</div>
 
         <div className='flex flex_align_end header_social'>
           <div className='about_us flex flex_align_end' href='about'>ABOUT US</div>

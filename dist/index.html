@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    if(window.innerWidth>=1024){
+      window.location.replace('desktop.html');
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
-		<title>Tales</title>
+    }else{
+      window.location.replace('mobile.html');
 
-		<link href="fonts/myfonts.css" rel="stylesheet" type="text/css" />
-		<link href="desktop/postcss/style.css" rel="stylesheet" type="text/css" />
-		<script type='text/javascript' src='desktop/common.js'></script>
-		<style>
-			body{
-				background: url(images/bg.gif);
-			}
-		</style>
-	</head>
+    }
 
-
-	<body>
-
-		<div id="main"></div>
-
-		<script type="text/javascript" src='desktop/react.js'></script>
-		<script type='text/javascript' src='desktop/script.js'></script>
-		<script type="text/javascript" src='desktop/pages.js'></script>
-
-	</body>
+    </script>
+  </body>
 </html>

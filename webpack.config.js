@@ -7,7 +7,7 @@ const extractCSS = new ExtractTextPlugin('./postcss/style.css');
 var postcssUrl = require("postcss-url");
 
 module.exports = {
-  context: __dirname + '/src/',
+  context: __dirname + '/src_mobile/',
   entry: {
     common: './js/no_babel/common',
     script: './js/script',
@@ -16,7 +16,7 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve(__dirname,'dist/desktop'),
+    path: path.resolve(__dirname,'dist/mobile'),
     filename: '[name].js',
     publicPath: '/',
     library: '[name]'
@@ -67,8 +67,8 @@ new webpack.optimize.UglifyJsPlugin({
   module: {
     rules: [{
         test: /\.js$/,
-        include: path.resolve(__dirname, "src/js"),
-        exclude: path.resolve(__dirname, "src/js/no_babel"),
+        include: path.resolve(__dirname, "src_mobile/js"),
+        exclude: path.resolve(__dirname, "src_mobile/js/no_babel"),
         use: {
           loader: 'babel',
           options: {
@@ -83,7 +83,7 @@ new webpack.optimize.UglifyJsPlugin({
       },
       {
         test : /\.js$/,
-        include : path.resolve(__dirname, "src/app"),
+        include : path.resolve(__dirname, "src_mobile/app"),
         loader : 'babel-loader',
         options : {
           presets : ['react','es2015','stage-2']

@@ -1,0 +1,57 @@
+:root{
+  --near_white: #eaeaea;
+  --white:#fff;
+  --near_dark_grey:#5b5b5b;
+  --near_yellow:#f9b93e;
+}
+
+.home_read_write{
+  position: absolute;
+  width:100%;
+  padding:0 15%;
+  color:var(--white);
+  font-size: 48.02px;
+  font-family:Helvetica;
+  font-weight: normal;
+  line-height:1.128571 !important;
+  > span{
+    width:100%;
+  }
+  > span > span > span{
+    color:var(--near_yellow);
+  }
+}
+.home_text{
+  position: relative;
+  margin-top:60px;
+  width:100%;
+  padding:0 15%;
+  color:var(--near_dark_grey);
+  font-size: 20.02px;
+  > span{
+    width:100%;
+  }
+
+}
+.apps{
+  position: relative;
+  size:100% 62px;
+  padding:0 15%;
+}
+.app_store{
+  position: relative;
+  width: 171px;
+}
+.google_play{
+  position: relative;
+  width: 184px;
+  margin-left:30px;
+}
+.phone_div{
+  position: absolute;
+  width: 100%;
+}
+.phone{
+  position: absolute;
+  width: 292px;
+}

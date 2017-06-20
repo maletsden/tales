@@ -9,12 +9,11 @@ class App extends Component {
   render(){
     return (
       <div>
+          <Header/>
+          <div id='container'></div>
+          <div id="particles-js"></div>
+          <Footer/>
 
-        <Header/>
-        <div id='container'></div>
-        <Footer/>
-
-        <div className='alphabet_bg'></div>
       </div>
 
     );

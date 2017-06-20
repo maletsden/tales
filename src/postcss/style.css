@@ -8,6 +8,7 @@
 
 
 
+
 @charset "UTF-8";
 
 
@@ -77,9 +78,10 @@
 .about_us{
   font-size: 18px;
   font-family:Helvetica;
-  font-weight: bold;
+  font-weight: normal;
   position: absolute;
-  right: 10%;
+  right: 5%;
+  margin-right: 140.672px;
   top:74px;
   width:120px;
   color: var(--near_white);
@@ -87,14 +89,15 @@
 .fa-facebook{
   position: absolute;
   top:65px;
-  right: 4%;
+  right: 5%;
+  margin-right: 64px;
   font-size: 23.91px !important;
   font-style: normal;
   size:13.672px 34px;
 }
 .fa-twitter{
   position: absolute;
-  right: 0;
+  right: 5%;
   top:65px;
   font-size: 23.91px !important;
   font-style: normal;
@@ -108,10 +111,11 @@
   position: relative;
 }
 .tales{
-  font-size: 36px;
+  font-size: 50px;
   font-family:Helvetica;
   font-weight: lighter;
   position: relative;
+  line-height: 0;
   top:50px;
   left:5%;
   color: var(--near_white);
@@ -149,17 +153,17 @@
   font-size: 18px;
   color:var(--footer_terms);
   position: absolute;
-  right:3%;
+  right:9%;
   margin-right:173px;
   bottom:43px;
-  size:131px 18px;
+  size:133px 18px;
 }
 .footer_smile{
   font-size: 18px;
   color:var(--footer_terms);
   position: absolute;
-  right:3%;
-  margin-right:136px;
+  right:9%;
+  margin-right:144px;
   bottom:41px;
   size:18px;
 }
@@ -167,14 +171,31 @@
   font-size: 18px;
   color:var(--footer_terms);
   position: absolute;
-  right:3%;
-  bottom:41px;
+  right:9%;
+  margin-bottom: 70px;
   size:131px 18px;
 }
 
-.alphabet_bg div{
-  position:absolute;
+#particles-js{
+  position:fixed;
   z-index:-15;
   color:#fff;
   font-size:200%;
+  size: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background: #000000;
+}
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
 }
